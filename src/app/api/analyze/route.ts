@@ -36,6 +36,12 @@ Aşağıdaki ürünleri ayırt ederken bu görsel referansları kullan:
 6. **ARPA EZME:**
    - **Görünüm:** Beyaz/Krem gövdeli, dışı sarımsı kabuklu, ezilmiş pullar. (Mısır Flake ile karıştırma, bu daha beyazdır).
 
+7. **MISIR SİLAJI (Doğranmış Mısır):**
+   - **Görünüm:** Kahverengi-Yeşil karışık lifli yapı.
+   - **İçerik:** İnce kıyılmış mısır sapları, yaprakları ve mısır daneleri (sarı noktalar) içerir.
+   - **Doku:** Nemli ve lifli görünür. Saman gibi sapsarı değil, daha koyu ve nemlidir.
+   - **Ayırt Edici:** TMR'den farkı, içinde KARIŞIK YEM (pellet) veya yoğun Mısır Flake bulunmaz. Sadece mısır bitkisi parçalarıdır.
+
 --- KURALLAR ---
 1. SADECE LİSTEDEKİ YEMLERİ TANI.
 2. EĞER GÖRÜNTÜDE YEM YOKSA: "⚠️ YABANCI CİSİM" de.
