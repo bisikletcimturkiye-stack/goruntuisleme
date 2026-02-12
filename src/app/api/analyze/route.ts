@@ -12,44 +12,40 @@ GÖREVİN: Depoya yüklenen hammaddenin tarımsal niteliğini GÖRSEL OLARAK do�
 --- KRİTİK BİLGİ BANKASI (BUNLARI EZBERLE) ---
 Aşağıdaki ürünleri ayırt ederken bu görsel referansları kullan:
 
-1. **SOYA KÜSBESİ (Soya Fasulyesi Küspesi):**
-   - **Görünüm:** Açık kahverengi, sarımsı, bej tonlarında.
-   - **Doku:** İnce granül veya un gibi, homojen yapıda.
-   - **Ayırt Edici:** Mısır DDGS'den daha açık renklidir, tahıl tanesi içermez.
+1. **SÜT YEMİ (Pellet Yem):**
+   - **Görünüm:** Silindirik, kısa çubuklar halinde (pellet formunda).
+   - **Renk:** Genellikle gri-kahverengi tonlarında.
+   - **Kritik:** Un veya toz değil, sıkıştırılmış pelletlerdir. Başka yemlerle karıştırma.
 
-2. **MISIR DDGS (Kurutulmuş Damıtık Tahıl):**
-   - **Görünüm:** Altın sarısından koyu kehribar/kahverengiye dönük.
-   - **Doku:** Mısır irmiği veya kaba un gibi.
-   - **Ayırt Edici:** Soya küsbesinden daha koyu, turuncumsu/altın rengi parlaklığı olabilir.
+2. **MISIR FLAKE (Mısır Ezmesi):**
+   - **Görünüm:** Sarı, altın rengi, yassılaşmış mısır taneleri.
+   - **Doku:** İnce yapraklar (flake) halinde.
+   - **Kritik:** Arpa ezme ile KARIŞTIRMA. Mısır flake SARI renklidir, arpa ezme beyaz/krem renklidir.
 
-3. **YULAF OTU (Kuru Ot):**
-   - **Görünüm:** İnce, uzun, sarımsı/bej saplar.
-   - **Doku:** Saman benzeri ama daha ince yapılı, salkım püskülleri (çiçek başları) görülebilir.
-   - **Ayırt Edici:** Buğday samanından daha ince saplıdır, püsküllü başak yapısı vardır.
+3. **TMR (Total Mixed Ration - Tam Karışım):**
+   - **Görünüm:** Çoklu bileşen karışımı (Türlü gibi görünür).
+   - **İçerik:** İçinde Silaj (lifli), Yonca (yeşil saplar), Yem (pellet/toz) ve Flake (sarı taneler) bir arada bulunur.
+   - **Kritik:** Tek bir ürün değildir. Eğer bu bileşenlerin epsini bir arada görüyorsan buna mutlaka "TMR KARIŞIM" de.
 
-4. **KORUNGA OTU (Baklagil Yemi):**
-   - **Görünüm:** Yeşilimsi veya kuruyken mat kahve-yeşil. Pembe çiçek kalıntıları olabilir.
-   - **Doku:** Çok yapraklı (yonca gibi ama daha kaba), bileşik yaprak yapısı.
-   - **Ayırt Edici:** Yoncaya benzer ama daha kaba saplıdır, yaprakçıkları daha uzundur.
+4. **SOYA KÜSBESİ:**
+   - **Görünüm:** Açık kahve/bej, unsu granül yapı. (Mısır DDGS'den daha açık renk).
 
-5. **ARPA EZME:**
-   - **Görünüm:** Beyaz, krem gövdeli, dışı sarımsı kabuklu.
-   - **Doku:** Yassılaşmış, ezilmiş, pul pul tane yapısı.
-   - **Ayırt Edici:** Bütün arpadan farklı olarak yassıdır. Yulaf ezmesine benzer ama daha kaba ve kalın olabilir.
+5. **MISIR DDGS:**
+   - **Görünüm:** Turuncumsu/Altın sarısı, irmiğimsi yapı. (Soya'dan daha koyu).
+
+6. **ARPA EZME:**
+   - **Görünüm:** Beyaz/Krem gövdeli, dışı sarımsı kabuklu, ezilmiş pullar. (Mısır Flake ile karıştırma, bu daha beyazdır).
 
 --- KURALLAR ---
-1. SADECE TARIM VE YEM ÜRÜNLERİNİ TANI. (Mısır, Silaj, Yonca, Arpa, Buğday, Küspe, Saman, Soya, DDGS vb.)
-2. EĞER EMİN DEĞİLSEN, en yakın tarımsal tahmini yap ama yanına "(Tahmini)" yaz.
-3. EĞER GÖRÜNTÜ TARIMSAL DEĞİLSE (İnsan, Beton, Demir vb.):
-   - Cevap: "⚠️ YABANCI CİSİM"
-4. ÇIKIŞ FORMATI (SADECE BUNU YAZ):
+1. SADECE LİSTEDEKİ YEMLERİ TANI.
+2. EĞER GÖRÜNTÜDE YEM YOKSA: "⚠️ YABANCI CİSİM" de.
+3. ÇIKIŞ FORMATI:
    "[ÜRÜN ADI] - [GÖRSEL DURUM/KALİTE]"
 
 ÖRNEKLER:
-- "MISIR SİLAJI - Dane oranı yüksek, renk ideal."
-- "SOYA KÜSBESİ - Açık renkli, temiz görünüyor."
-- "MISIR DDGS - Altın sarısı, ince yapılı."
-- "ARPA EZME - Tam ezilmiş, nişastası belirgin."
+- "SÜT YEMİ - Pellet formu düzgün, toz oranı az."
+- "MISIR FLAKE - Sarı ve parlak, arpa karışımı yok."
+- "TMR KARIŞIM - Homojen karışmış, silaj ve yonca oranı dengeli."
 `;
 
 export async function POST(req: Request) {
