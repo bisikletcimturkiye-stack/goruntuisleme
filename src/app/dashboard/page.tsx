@@ -92,9 +92,35 @@ export default function Dashboard() {
 
                 {/* Right Column: Summaries & Controls */}
                 <div className="space-y-6">
+                    <div className="bg-slate-800 rounded-2xl p-6 border border-slate-700 shadow-xl">
+                        <h2 className="text-lg font-bold text-white mb-4">Rasyon Editörü (Veteriner)</h2>
+                        <div className="space-y-4">
+                            <div>
+                                <label className="block text-xs text-slate-500 mb-1 uppercase font-bold">Yem Tipi</label>
+                                <select className="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-sm">
+                                    <option>Mısır Silajı</option>
+                                    <option>Yonca</option>
+                                    <option>Arpa</option>
+                                    <option>Fabrika Yemi</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label className="block text-xs text-slate-500 mb-1 uppercase font-bold">Hedef Ağırlık (kg)</label>
+                                <input type="number" placeholder="500" className="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-sm" />
+                            </div>
+                            <div>
+                                <label className="block text-xs text-slate-500 mb-1 uppercase font-bold">Hata Payı (%)</label>
+                                <input type="number" placeholder="5" className="w-full bg-slate-900 border border-slate-700 rounded-lg p-2 text-sm" />
+                            </div>
+                            <button className="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 rounded-lg transition-all text-sm">
+                                Plana Ekle
+                            </button>
+                        </div>
+                    </div>
+
                     <div className="bg-gradient-to-br from-orange-600/20 to-orange-900/10 rounded-2xl p-6 border border-orange-500/20 shadow-xl">
                         <h2 className="text-lg font-bold text-orange-400 mb-4">Veteriner Notu</h2>
-                        <p className="text-slate-300 italic">
+                        <p className="text-slate-300 italic text-sm">
                             "Süt hayvanları rasyonu için silaj miktarını %5 artırdım. Kantar hassasiyetine dikkat edilsin."
                         </p>
                         <button className="mt-4 w-full bg-orange-600 hover:bg-orange-500 text-white font-bold py-3 rounded-xl transition-all">
