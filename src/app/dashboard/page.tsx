@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { Activity, Tractor, AlertTriangle, CheckCircle } from "lucide-react";
+import { Activity, Tractor, AlertTriangle, CheckCircle, ClipboardList } from "lucide-react";
 
 // Mock data for the dashboard
 const MOCK_LOGS = [
@@ -86,6 +86,43 @@ export default function Dashboard() {
                                     </div>
                                 );
                             })}
+                        </div>
+                    </div>
+
+                    {/* Detailed Data Table for Veterinarian/Owner */}
+                    <div className="bg-slate-800 rounded-2xl p-6 border border-slate-700 shadow-xl overflow-hidden">
+                        <h2 className="text-xl font-semibold mb-6 flex items-center gap-2">
+                            <ClipboardList className="text-blue-400" size={20} />
+                            Detaylı Besleme Kayıtları (Veteriner Kaydı)
+                        </h2>
+                        <div className="overflow-x-auto">
+                            <table className="w-full text-left border-collapse">
+                                <thead className="text-slate-500 text-xs uppercase font-bold border-b border-slate-700">
+                                    <tr>
+                                        <th className="py-3 px-4">Zaman</th>
+                                        <th className="py-3 px-4">Çiftlik</th>
+                                        <th className="py-3 px-4">Yem Cinsi</th>
+                                        <th className="py-3 px-4">Miktar (kg)</th>
+                                        <th className="py-3 px-4">Doğruluk</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="text-sm divide-y divide-slate-800">
+                                    {[...MOCK_LOGS].reverse().map((log) => (
+                                        <tr key={log.id} className="hover:bg-slate-900/50 transition-colors">
+                                            <td className="py-4 px-4 font-mono text-slate-400">{log.time}</td>
+                                            <td className="py-4 px-4 font-semibold text-slate-200">Yeşil Vadi Çiftliği</td>
+                                            <td className="py-4 px-4 text-slate-300">{log.type}</td>
+                                            <td className="py-4 px-4 font-bold text-blue-400">{log.weight} kg</td>
+                                            <td className="py-4 px-4">
+                                                <span className={`px-2 py-1 rounded-md text-[10px] font-bold ${log.status === 'exact' ? 'bg-green-500/10 text-green-500' : 'bg-red-500/10 text-red-500'
+                                                    }`}>
+                                                    {log.status === 'exact' ? 'BAŞARILI' : 'SAPMA VAR'}
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
